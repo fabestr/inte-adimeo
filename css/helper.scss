@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Poiret+One&display=swap");
+
+$colorBody:#e7e7e7;
+$title: #2f4644;
+$link: black;
+$bgFooter:#090e12;
+
+
+/**********************FONT**************************************/
+$titleFont:'Poiret One', cursive;
+
+
+a
+{
+  text-decoration: none;
+  color: $link;
+
+
+  transition: color 0.3s ease;
+}

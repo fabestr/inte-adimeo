@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <script src="https://kit.fontawesome.com/508727396b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header container">
+        <nav class="navigation" role="navigation">
+            <div id="menuToggle">
+                <!--
+                A fake / hidden checkbox is used as click reciever,
+                so you can use the :checked selector on it.
+                -->
+                <input type="checkbox" />
+
+                <!--
+                Some spans to act as a hamburger.
+
+                They are acting like a real hamburger,
+                not that McDonalds stuff.
+                -->
+                <span></span>
+                <span></span>
+                <span></span>
+
+
+                <!--
+                Too bad the menu has to be inside of the button
+                but hey, it's pure CSS magic.
+                -->
+                <ul id="menu">
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>About</li></a>
+                    <a href="#"><li>Info</li></a>
+                    <a href="#"><li>Contact</li></a>
+                    <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+                </ul>
+            </div>
+        </nav>
+        <div class="brand">
+            <h1><a href="">La numothèque Grenoble-Alpes</a></h1>
+            <p class="slogan">La biblihotèque numérique de la métropole Grenoble-Alpes</p>
+        </div>
+        <div class="user">
+            <form action="">
+                <label for="search">Rechercher</label>
+                <input type="text" id="search">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <a href="">| MON COMPTE</a>
+        </div>
+    </header>
+    <main class="main container">
+        <nav>
+            <ul>
+                <li>Les nouveautés</li>
+                <li><a href=""><i class="fas fa-headphones"></i>Musique</a></li>
+                <li><a href=""><i class="fas fa-video"></i>Cinéma</a></li>
+                <li><a href=""><i class="fas fa-book-open"></i>Livre</a></li>
+                <li><a href=""><i class="far fa-newspaper"></i>Presse</a></li>
+                <li><a href=""><i class="fas fa-user-graduate"></i>Autoformation</a></li>
+                <li><a href=""><i class="fas fa-university"></i>Patrimoine</a></li>
+            </ul>
+        </nav>
+
+        <div class="photos">
+            <div><img src="img/Calque 6.png" alt=""></div>
+            <div class=""><img src="img/Calque 13.png" alt=""></div>
+            <div><img src="img/Calque 3.png" alt=""></div>
+            <div><img src="img\Calque 72.png" alt=""></div>
+        </div>
+
+    </main>
+</body>
+</html>

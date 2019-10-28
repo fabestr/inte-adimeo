@@ -1,0 +1,51 @@
+/***********************IMPORT************************************/
+@import url("https://fonts.googleapis.com/css?family=Poiret+One&display=swap");
+/**********************FONT**************************************/
+a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+/************************ HEADER **********************************/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*&>:nth-child(n){
+    flex: 1 1 0;
+  }*/
+}
+.header .navigation {
+  width: 25%;
+}
+.header .brand {
+  width: 50%;
+  text-align: center;
+}
+.header .brand h1 {
+  font-family: "Poiret One", cursive;
+  font-weight: normal;
+  font-size: 2em;
+}
+.header .brand .slogan {
+  text-transform: uppercase;
+}
+.header .user form {
+  display: inline;
+  overflow: visible;
+}
+.header .user form input {
+  width: 0;
+  border: none;
+  transition: width 1s;
+}
+.header .user form button {
+  background: transparent;
+  border: none;
+}
+.header .user form:hover input {
+  width: 5.5em;
+}
+
+/*# sourceMappingURL=header.css.map */

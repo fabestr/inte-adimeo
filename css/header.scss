@@ -1,0 +1,50 @@
+/***********************IMPORT************************************/
+@import "helper";
+
+/************************ HEADER **********************************/
+
+
+.header {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  /*&>:nth-child(n){
+    flex: 1 1 0;
+  }*/
+
+  .navigation {
+    width:25%;
+  }
+
+  .brand {
+    width: 50%;
+    text-align: center;
+    h1 {
+      font-family: $titleFont;
+      font-weight: normal;
+      font-size: 2em;
+    }
+    .slogan {
+      text-transform: uppercase;
+    }
+  }
+  .user {
+    form {
+      display: inline;
+      overflow: visible;
+      input {
+        width:0;
+        border: none;
+        transition:width 1s;
+      }
+      button {
+        background: transparent;
+        border: none;
+      }
+    }
+    form:hover input {
+      width:5.5em;
+    }
+
+  }
+}

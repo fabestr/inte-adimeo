@@ -1,0 +1,39 @@
+/*************************IMPORT**********************************/
+@import url("https://fonts.googleapis.com/css?family=Poiret+One&display=swap");
+/**********************FONT**************************************/
+a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+/*********************** MAIN **********************************
+***************************************************************/
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #e7e7e7;
+}
+
+.photos {
+  display: flex;
+  width: 100%;
+}
+.photos > :nth-child(n) {
+  display: flex;
+  flex-direction: column;
+  margin: 0.2em;
+  width: 23.3%;
+}
+.photos > :nth-child(2) {
+  width: 30%;
+}
+
+/*# sourceMappingURL=main.css.map */
