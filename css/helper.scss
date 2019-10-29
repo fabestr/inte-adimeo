@@ -1,14 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Poiret+One&display=swap");
-
+@import url("https://fonts.googleapis.com/css?family=Poiret+One|Roboto&display=swap");
 $colorBody:#e7e7e7;
-$title: #2f4644;
+$titleColor: #2f4644;
 $link: black;
 $bgFooter:#090e12;
+$textFooter: white;
+$bgDescription : #4dcaf3;
+
 
 
 /**********************FONT**************************************/
 $titleFont:'Poiret One', cursive;
-
+$bodyFont: 'Roboto', sans-serif;
 
 a
 {

@@ -21,30 +21,97 @@
     text-align: center;
     h1 {
       font-family: $titleFont;
-      font-weight: normal;
-      font-size: 2em;
+      font-weight: bold;
+      font-size: 3em;
     }
     .slogan {
       text-transform: uppercase;
     }
   }
-  .user {
+  .search {
+    text-align: right;
+    width:25%;
     form {
       display: inline;
       overflow: visible;
-      input {
-        width:0;
-        border: none;
-        transition:width 1s;
+
+      .inputHidden {
+        display: inline-block;
+        label {
+          position: relative;
+        }
+        input {
+          position: relative;
+          right:0;
+          width:0;
+          border: none;
+          transition:width 0.3s;
+        }
       }
+
       button {
         background: transparent;
         border: none;
       }
     }
     form:hover input {
-      width:5.5em;
+      width:8em;
     }
 
+  }
+
+  .userAccount {
+    width: 10%;
+  }
+  .userAccountDesktop {
+    font-size: 0.75em;
+  }
+}
+
+
+/****************************************************************************************
+***************************** MEDIA QUERIES******************************************/
+
+
+/******************* MOBILE *******************************************************/
+
+@media screen and (max-width: 700px){
+
+  .header {
+    flex-wrap: wrap;
+    .userAccountMobile {
+      font-size: 2em;
+      margin-top: 0;
+    }
+    .userAccountDesktop {
+      display: none;
+    }
+
+    .search {
+      order: 4;
+      width:100%;
+
+      form {
+        width: 100%;
+        .inputHidden {
+          width: 90%;
+          label {
+            display: none;
+          }
+
+          input {
+            width: 100%;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 700px) {
+  .userAccountMobile {
+    display: none;
   }
 }

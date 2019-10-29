@@ -2,12 +2,13 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Title</title>
-    <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/footer.css">
     <script src="https://kit.fontawesome.com/508727396b.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -29,6 +30,7 @@
                 <span></span>
                 <span></span>
                 <span></span>
+                <p>MENU</p>
 
 
                 <!--
@@ -45,17 +47,21 @@
             </div>
         </nav>
         <div class="brand">
-            <h1><a href="">La numothèque Grenoble-Alpes</a></h1>
-            <p class="slogan">La biblihotèque numérique de la métropole Grenoble-Alpes</p>
+            <h1><a href="">La numothèque</a></h1>
+            <p class="slogan">biblihotèque numérique de Grenoble</p>
         </div>
-        <div class="user">
+        <div class="search">
             <form action="">
-                <label for="search">Rechercher</label>
-                <input type="text" id="search">
+                <div class="inputHidden">
+                    <label for="search">Rechercher</label>
+                    <input type="text" id="search">
+                </div>
+
                 <button type="submit"><i class="fas fa-search"></i></button>
             </form>
-            <a href="">| MON COMPTE</a>
         </div>
+        <p class="userAccount userAccountDesktop"><a href="">| MON COMPTE</a></p>
+        <p class="userAccount userAccountMobile"><a href=""><i class="far fa-user"></i></a></p>
     </header>
     <main class="main container">
         <nav>
@@ -70,13 +76,74 @@
             </ul>
         </nav>
 
-        <div class="photos">
-            <div><img src="img/Calque 6.png" alt=""></div>
-            <div class=""><img src="img/Calque 13.png" alt=""></div>
-            <div><img src="img/Calque 3.png" alt=""></div>
-            <div><img src="img\Calque 72.png" alt=""></div>
-        </div>
-
+        <section class="photos">
+            <div>
+                <div class="overlay">
+                    <img src="img/Calque 6.png" alt="">
+                    <div class="description">
+                        <p><i class="fas fa-headphones"></i></p>
+                        <h3>test</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, vel.</p>
+                        <a href=""> > Ecouter en ligne</a>
+                    </div>
+                </div>
+                <img src="img/Calque 13.png" alt="">
+                <img src="img/Calque 51 copie 3.png" alt="">
+                <img src="img/Calque 104.png" alt="">
+            </div>
+            <div>
+                <img src="img/Calque 13.png" alt="">
+                <img src="img/Calque 70.png" alt="">
+                <img src="img/Calque 72.png" alt="">
+                <img src="img/Calque 77.png" alt="">
+            </div>
+            <div>
+                <img src="img/Calque 3.png" alt="">
+                <img src="img/Calque 26.png" alt="">
+                <img src="img/Calque 106.png" alt="">
+            </div>
+            <div>
+                <img src="img/Calque 72.png" alt="">
+                <img src="img/Calque 51 copie 3.png" alt="">
+                <img src="img/Calque 21.png" alt="">
+                <img src="img/Calque 51 copie 3.png" alt="">
+                <img src="img/Calque 76.png" alt="">
+            </div>
+        </section>
     </main>
+
+    <footer class="footer">
+        <div class="container flex-footer">
+            <div>
+                <a href="">
+                    <img src="img/Calque 100.png" alt="logo">
+                    <p><span>Biblihotèque</span> Municipale de Grenoble</p>
+                </a>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="">Aide</a></li>
+                    <li><a href="">Accessibilité</a></li>
+                    <li><a href="">Mode d'emploi</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">La numothèque c'est quoi?</a></li>
+                    <li><a href="">Mentions légales</a></li>
+                </ul>
+            </div>
+            <div>
+                <p>newsletter</p>
+                <form action="">
+                    <input type="text" placeholder="Votre courriel">
+                    <button>OK</button>
+                    <p>Suivez-nous <a href=""><i class="fab fa-facebook-f"></i></a> <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a></p>
+                </form>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

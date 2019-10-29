@@ -1,0 +1,72 @@
+/********************** IMPORT ************************************************/
+@import url("https://fonts.googleapis.com/css?family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poiret+One|Roboto&display=swap");
+/**********************FONT**************************************/
+a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+/*********************** FOOTER**************************************************/
+.footer {
+  background-color: #090e12;
+}
+.footer a,
+.footer p {
+  color: white;
+  text-transform: uppercase;
+}
+.footer .flex-footer {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.footer .flex-footer div {
+  width: 25%;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+.footer .flex-footer div ul {
+  list-style: none;
+}
+.footer .flex-footer div ul li {
+  margin: 0.7em 1em;
+}
+.footer .flex-footer img {
+  float: left;
+  margin-right: 0.5em;
+}
+.footer .flex-footer span {
+  display: block;
+}
+.footer .flex-footer > :last-child a {
+  margin: 0 0.5em;
+}
+
+/**********************************************************************************
+***************************** MEDIA QUERIES ***************************************/
+/******************** MOBILE******************************************************/
+@media screen and (max-width: 850px) {
+  .footer p {
+    width: 100%;
+  }
+  .footer .flex-footer {
+    flex-wrap: wrap;
+  }
+  .footer .flex-footer > div {
+    width: 100%;
+  }
+  .footer .flex-footer > div ul {
+    display: flex;
+    margin: 0 0;
+    padding-left: 0;
+  }
+  .footer .flex-footer > div ul li {
+    margin: 0 0.4em;
+  }
+  .footer .flex-footer > div:not(:first-child) {
+    margin: 0 0;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */

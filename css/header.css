@@ -1,5 +1,6 @@
 /***********************IMPORT************************************/
 @import url("https://fonts.googleapis.com/css?family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poiret+One|Roboto&display=swap");
 /**********************FONT**************************************/
 a {
   text-decoration: none;
@@ -25,27 +26,82 @@ a {
 }
 .header .brand h1 {
   font-family: "Poiret One", cursive;
-  font-weight: normal;
-  font-size: 2em;
+  font-weight: bold;
+  font-size: 3em;
 }
 .header .brand .slogan {
   text-transform: uppercase;
 }
-.header .user form {
+.header .search {
+  text-align: right;
+  width: 25%;
+}
+.header .search form {
   display: inline;
   overflow: visible;
 }
-.header .user form input {
+.header .search form .inputHidden {
+  display: inline-block;
+}
+.header .search form .inputHidden label {
+  position: relative;
+}
+.header .search form .inputHidden input {
+  position: relative;
+  right: 0;
   width: 0;
   border: none;
-  transition: width 1s;
+  transition: width 0.3s;
 }
-.header .user form button {
+.header .search form button {
   background: transparent;
   border: none;
 }
-.header .user form:hover input {
-  width: 5.5em;
+.header .search form:hover input {
+  width: 8em;
+}
+.header .userAccount {
+  width: 10%;
+}
+.header .userAccountDesktop {
+  font-size: 0.75em;
+}
+
+/****************************************************************************************
+***************************** MEDIA QUERIES******************************************/
+/******************* MOBILE *******************************************************/
+@media screen and (max-width: 700px) {
+  .header {
+    flex-wrap: wrap;
+  }
+  .header .userAccountMobile {
+    font-size: 2em;
+    margin-top: 0;
+  }
+  .header .userAccountDesktop {
+    display: none;
+  }
+  .header .search {
+    order: 4;
+    width: 100%;
+  }
+  .header .search form {
+    width: 100%;
+  }
+  .header .search form .inputHidden {
+    width: 90%;
+  }
+  .header .search form .inputHidden label {
+    display: none;
+  }
+  .header .search form .inputHidden input {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 700px) {
+  .userAccountMobile {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=header.css.map */

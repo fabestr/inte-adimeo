@@ -10,12 +10,13 @@
 }
 
 .container {
-  max-width: 80%;
+  max-width: 90%;
   margin: 0 auto;
 }
 
 body {
   background-color: $colorBody;
+  font-family: $bodyFont;
 }
 
 
@@ -33,4 +34,66 @@ body {
   &>:nth-child(2) {
     width:30%;
   }
+  img {
+    width: 100%;
+    margin: 0.2em 0;
+  }
+
+  .overlay {
+    width:100%;
+    position: relative;
+    overflow: hidden;
+
+    .description {
+      position: absolute;
+      background:linear-gradient(175deg,transparent 15%, #4dcaf3 16%);;
+      bottom: 0px;
+      right:0px;
+      width:100%;
+      height: 0;
+      text-align: center;
+      p:first-child {
+        font-size: 1.5em;
+        padding-top: 2em;
+        margin-bottom: 0;
+      }
+     h3 {
+       padding-top:0;
+
+      }
+    }
+  }
+  .overlay:hover .description {
+    height: 40%;
+    transition: height 0.7s;
+
+    /*h1 {
+      display: block;
+    }
+    p {
+      display: block;
+    }*/
+  }
+
+}
+
+
+/****************************************************************************************
+***************************** MEDIA QUERIES******************************************/
+
+
+/******************* MOBILE *******************************************************/
+@media screen and (max-width:700px) {
+
+  main {
+    section.photos {
+      flex-wrap: wrap;
+
+      &>:nth-child(n) {
+        width:100%;
+      }
+
+    }
+  }
+
 }

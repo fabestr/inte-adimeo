@@ -45,7 +45,7 @@
   margin-bottom: 5px;
   position: relative;
 
-  background: black;
+  background: $link;
   border-radius: 3px;
 
   z-index: 1;
@@ -55,6 +55,13 @@
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
   background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
   opacity 0.55s ease;
+}
+
+#menuToggle>p {
+  position: relative;
+  z-index: 1;
+  margin-top: 0;
+  left: -0.3em;
 }
 
 #menuToggle span:first-child
@@ -81,7 +88,7 @@
 /*
  * But let's hide the middle one.
  */
-#menuToggle input:checked ~ span:nth-last-child(3)
+#menuToggle input:checked ~ span:nth-last-child(4)
 {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
@@ -90,9 +97,9 @@
 /*
  * Ohyeah and the last one should go the other direction
  */
-#menuToggle input:checked ~ span:nth-last-child(2)
+#menuToggle input:checked ~ span:nth-last-child(3)
 {
-  transform: rotate(-45deg) translate(0, -1px);
+  transform: rotate(-45deg) translate(-1px, -4px);
 }
 
 /*
@@ -113,7 +120,7 @@
   /* to stop flickering of text in safari */
 
   transform-origin: 0% 0%;
-  transform: translate(-110%, 0);
+  transform: translate(-150%, 0);
 
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
@@ -140,29 +147,56 @@
 
   nav {
     margin: 0 auto;
-    width: 70%;
+    width:90%;
     text-align: center;
     ul {
       display:flex;
+      font-size: 1em;
       justify-content: space-around;
       list-style: none;
-      align-items: center;
+      padding-left: 0;
 
       li {
         font-weight: bold;
         width:5em;
         height:5em;
+        margin:0 1em;
         padding-top: 1em;
-        i {
-          display: block;
-          font-size:1.5em;
+        a {
+          i {
+            display: block;
+            font-size:1.5em;
+          }
         }
+
       }
       li:hover:not(:first-child) {
         background-color: white;
         border-radius: 50%;
       }
 
+    }
+  }
+}
+
+
+
+/**********************************************************************************
+***************************** MEDIA QUERIES ***************************************/
+
+/******************** MOBILE******************************************************/
+
+@media screen and (max-width: 900px) {
+
+  .main {
+    nav {
+      ul {
+        flex-wrap: wrap;
+
+        &>:first-child {
+          width:100%;
+        }
+      }
     }
   }
 }

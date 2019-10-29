@@ -1,0 +1,83 @@
+/********************** IMPORT ************************************************/
+@import "helper";
+
+
+/*********************** FOOTER**************************************************/
+
+.footer {
+  background-color: $bgFooter;
+  a,
+  p {
+    color: $textFooter;
+    text-transform: uppercase;
+  }
+
+  .flex-footer {
+    display: flex;
+    flex-wrap: nowrap;
+
+    div {
+      width: 25%;
+      margin-top: 1.5em;
+      margin-bottom: 1em;
+      //padding-top: 2em;
+
+      ul {
+
+        list-style: none;
+        li {
+          margin:0.7em 1em;
+        }
+      }
+
+    }
+
+    img {
+      float: left;
+      margin-right: 0.5em;
+    }
+    span {
+      display: block;
+    }
+
+    &>:last-child {
+      a {
+        margin: 0 0.5em;
+      }
+    }
+  }
+}
+
+
+/**********************************************************************************
+***************************** MEDIA QUERIES ***************************************/
+
+/******************** MOBILE******************************************************/
+
+
+@media screen and (max-width: 850px) {
+  .footer {
+    p {
+      width:100%;
+    }
+    .flex-footer {
+      flex-wrap: wrap;
+
+      &>div {
+        width: 100%;
+        ul {
+          display:flex;
+          margin: 0 0;
+          padding-left: 0;
+          li {
+            margin: 0 0.4em;
+          }
+        }
+      }
+      &>div:not(:first-child) {
+        margin:0 0;
+      }
+    }
+  }
+
+}

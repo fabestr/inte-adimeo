@@ -1,5 +1,6 @@
 /*********************** IMPORT********************************/
 @import url("https://fonts.googleapis.com/css?family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poiret+One|Roboto&display=swap");
 /**********************FONT**************************************/
 a {
   text-decoration: none;
@@ -49,6 +50,13 @@ a {
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
 
+#menuToggle > p {
+  position: relative;
+  z-index: 1;
+  margin-top: 0;
+  left: -0.3em;
+}
+
 #menuToggle span:first-child {
   transform-origin: 0% 0%;
 }
@@ -70,7 +78,7 @@ a {
 /*
  * But let's hide the middle one.
  */
-#menuToggle input:checked ~ span:nth-last-child(3) {
+#menuToggle input:checked ~ span:nth-last-child(4) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
@@ -78,8 +86,8 @@ a {
 /*
  * Ohyeah and the last one should go the other direction
  */
-#menuToggle input:checked ~ span:nth-last-child(2) {
-  transform: rotate(-45deg) translate(0, -1px);
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  transform: rotate(-45deg) translate(-1px, -4px);
 }
 
 /*
@@ -97,7 +105,7 @@ a {
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
   transform-origin: 0% 0%;
-  transform: translate(-110%, 0);
+  transform: translate(-150%, 0);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
@@ -116,28 +124,42 @@ a {
 /********************************NAV - MAIN **********************************************/
 .main nav {
   margin: 0 auto;
-  width: 70%;
+  width: 90%;
   text-align: center;
 }
 .main nav ul {
   display: flex;
+  font-size: 1em;
   justify-content: space-around;
   list-style: none;
-  align-items: center;
+  padding-left: 0;
 }
 .main nav ul li {
   font-weight: bold;
   width: 5em;
   height: 5em;
+  margin: 0 1em;
   padding-top: 1em;
 }
-.main nav ul li i {
+.main nav ul li a i {
   display: block;
   font-size: 1.5em;
 }
 .main nav ul li:hover:not(:first-child) {
   background-color: white;
   border-radius: 50%;
+}
+
+/**********************************************************************************
+***************************** MEDIA QUERIES ***************************************/
+/******************** MOBILE******************************************************/
+@media screen and (max-width: 900px) {
+  .main nav ul {
+    flex-wrap: wrap;
+  }
+  .main nav ul > :first-child {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=menu.css.map */
