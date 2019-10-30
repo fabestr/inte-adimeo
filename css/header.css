@@ -10,12 +10,21 @@ a {
 
 /************************ HEADER **********************************/
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: fixed;
+  background-color: #e7e7e7;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  top: 0;
   /*&>:nth-child(n){
     flex: 1 1 0;
   }*/
+}
+.header .flex-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .header .navigation {
   width: 25%;
@@ -71,31 +80,33 @@ a {
 ***************************** MEDIA QUERIES******************************************/
 /******************* MOBILE *******************************************************/
 @media screen and (max-width: 700px) {
-  .header {
+  .flex-header {
     flex-wrap: wrap;
   }
-  .header .userAccountMobile {
+  .flex-header .userAccountMobile {
+    width: 25%;
     font-size: 2em;
     margin-top: 0;
   }
-  .header .userAccountDesktop {
+  .flex-header .userAccountDesktop {
     display: none;
   }
-  .header .search {
+  .flex-header .search {
     order: 4;
     width: 100%;
   }
-  .header .search form {
+  .flex-header .search form {
     width: 100%;
   }
-  .header .search form .inputHidden {
+  .flex-header .search form .inputHidden {
     width: 90%;
   }
-  .header .search form .inputHidden label {
+  .flex-header .search form .inputHidden label {
     display: none;
   }
-  .header .search form .inputHidden input {
+  .flex-header .search form .inputHidden input {
     width: 100%;
+    margin-bottom: 2em;
   }
 }
 @media screen and (min-width: 700px) {

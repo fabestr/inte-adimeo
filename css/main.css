@@ -22,6 +22,11 @@ a {
 body {
   background-color: #e7e7e7;
   font-family: "Roboto", sans-serif;
+  margin-top: 0;
+}
+
+.main nav {
+  padding-top: 11em;
 }
 
 .photos {
@@ -46,6 +51,26 @@ body {
   position: relative;
   overflow: hidden;
 }
+.photos .overlay .crop {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  margin-bottom: 3em;
+  background-color: white;
+}
+.photos .overlay .crop p {
+  margin: 0;
+  padding: 1em 1em;
+}
+.photos .overlay .textUnderPhoto {
+  background-color: white;
+  margin-top: -0.5em;
+  width: 100%;
+}
+.photos .overlay .textUnderPhoto p {
+  margin: 0;
+  padding: 1em 1em;
+}
 .photos .overlay .description {
   position: absolute;
   background: linear-gradient(175deg, transparent 15%, #4dcaf3 16%);
@@ -64,7 +89,7 @@ body {
   padding-top: 0;
 }
 .photos .overlay:hover .description {
-  height: 40%;
+  height: 17em;
   transition: height 0.7s;
   /*h1 {
     display: block;

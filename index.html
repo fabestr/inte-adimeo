@@ -12,56 +12,59 @@
     <script src="https://kit.fontawesome.com/508727396b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="header container">
-        <nav class="navigation" role="navigation">
-            <div id="menuToggle">
-                <!--
-                A fake / hidden checkbox is used as click reciever,
-                so you can use the :checked selector on it.
-                -->
-                <input type="checkbox" />
+    <header class="header">
+        <div class="container flex-header">
+            <nav class="navigation" role="navigation">
+                <div id="menuToggle">
+                    <!--
+                    A fake / hidden checkbox is used as click reciever,
+                    so you can use the :checked selector on it.
+                    -->
+                    <input type="checkbox" />
 
-                <!--
-                Some spans to act as a hamburger.
+                    <!--
+                    Some spans to act as a hamburger.
 
-                They are acting like a real hamburger,
-                not that McDonalds stuff.
-                -->
-                <span></span>
-                <span></span>
-                <span></span>
-                <p>MENU</p>
+                    They are acting like a real hamburger,
+                    not that McDonalds stuff.
+                    -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <p>MENU</p>
 
 
-                <!--
-                Too bad the menu has to be inside of the button
-                but hey, it's pure CSS magic.
-                -->
-                <ul id="menu">
-                    <a href="#"><li>Home</li></a>
-                    <a href="#"><li>About</li></a>
-                    <a href="#"><li>Info</li></a>
-                    <a href="#"><li>Contact</li></a>
-                    <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
-                </ul>
-            </div>
-        </nav>
-        <div class="brand">
-            <h1><a href="">La numothèque</a></h1>
-            <p class="slogan">biblihotèque numérique de Grenoble</p>
-        </div>
-        <div class="search">
-            <form action="">
-                <div class="inputHidden">
-                    <label for="search">Rechercher</label>
-                    <input type="text" id="search">
+                    <!--
+                    Too bad the menu has to be inside of the button
+                    but hey, it's pure CSS magic.
+                    -->
+                    <ul id="menu">
+                        <a href="#"><li>Home</li></a>
+                        <a href="#"><li>About</li></a>
+                        <a href="#"><li>Info</li></a>
+                        <a href="#"><li>Contact</li></a>
+                        <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+                    </ul>
                 </div>
+            </nav>
+            <div class="brand">
+                <h1><a href="">La numothèque</a></h1>
+                <p class="slogan">bibliothèque numérique de Grenoble</p>
+            </div>
+            <div class="search">
+                <form action="">
+                    <div class="inputHidden">
+                        <label for="search">Rechercher</label>
+                        <input type="text" id="search">
+                    </div>
 
-                <button type="submit"><i class="fas fa-search"></i></button>
-            </form>
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <p class="userAccount userAccountDesktop"><a href="">| MON COMPTE</a></p>
+            <p class="userAccount userAccountMobile"><a href=""><i class="far fa-user"></i></a></p>
         </div>
-        <p class="userAccount userAccountDesktop"><a href="">| MON COMPTE</a></p>
-        <p class="userAccount userAccountMobile"><a href=""><i class="far fa-user"></i></a></p>
+
     </header>
     <main class="main container">
         <nav>
@@ -87,27 +90,156 @@
                         <a href=""> > Ecouter en ligne</a>
                     </div>
                 </div>
-                <img src="img/Calque 13.png" alt="">
-                <img src="img/Calque 51 copie 3.png" alt="">
-                <img src="img/Calque 104.png" alt="">
+                <div class="overlay">
+                    <img src="img/Calque 13.png" alt="">
+                    <div class="description">
+                        <p><i class="fas fa-headphones"></i></p>
+                        <h3>test</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, vel.</p>
+                        <a href=""> > Ecouter en ligne</a>
+                    </div>
+                </div>
+                <div class="overlay">
+                    <img src="img/Calque 51 copie 3.png" alt="">
+                    <div class="description">
+                        <p><i class="fas fa-headphones"></i></p>
+                        <h3>test</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, vel.</p>
+                        <a href=""> > Ecouter en ligne</a>
+                    </div>
+                </div>
+                <div class="overlay">
+                    <img src="img/Calque 104.png" alt="">
+                    <div class="description">
+                        <p><i class="fas fa-headphones"></i></p>
+                        <h3>test</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, vel.</p>
+                        <a href=""> > Ecouter en ligne</a>
+                    </div>
+                </div>
             </div>
             <div>
-                <img src="img/Calque 13.png" alt="">
-                <img src="img/Calque 70.png" alt="">
-                <img src="img/Calque 72.png" alt="">
-                <img src="img/Calque 77.png" alt="">
+                <div class="overlay">
+                    <img src="img/Calque 13.png" alt="">
+                    <div class="description">
+                        <p><i class="fas fa-headphones"></i></p>
+                        <h3>test</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, vel.</p>
+                        <a href=""> > Ecouter en ligne</a>
+                    </div>
+                </div>
+                <div class="overlay">
+                    <img src="img/Calque 70.png" alt="">
+                    <div class="crop">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo fugiat minus repudiandae? Delectus, quod, unde!</p>
+                    </div>
+                    <div class="description">
+                        <p><i class="fas fa-headphones"></i></p>
+                        <h3>test</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, vel.</p>
+                        <a href=""> > Ecouter en ligne</a>
+                    </div>
+                </div>
+                <div class="overlay">
+                    <img src="img/Calque 72.png" alt="">
+                    <div class="description">
+                        <p><i class="fas fa-headphones"></i></p>
+                        <h3>test</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, vel.</p>
+                        <a href=""> > Ecouter en ligne</a>
+                    </div>
+                </div>
+                <div class="overlay">
+                    <img src="img/Calque 77.png" alt="">
+                    <div class="textUnderPhoto">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo fugiat minus repudiandae? Delectus, quod, unde!</p>
+                    </div>
+                    <div class="description">
+                        <p><i class="fas fa-headphones"></i></p>
+                        <h3>test</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, vel.</p>
+                        <a href=""> > Ecouter en ligne</a>
+                    </div>
+                </div>
             </div>
             <div>
-                <img src="img/Calque 3.png" alt="">
-                <img src="img/Calque 26.png" alt="">
-                <img src="img/Calque 106.png" alt="">
+                <div class="overlay">
+                    <img src="img/Calque 3.png" alt="">
+                    <div class="description">
+                        <p><i class="fas fa-headphones"></i></p>
+                        <h3>test</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, vel.</p>
+                        <a href=""> > Ecouter en ligne</a>
+                    </div>
+                </div>
+                <div class="overlay">
+                    <img src="img/Calque 26.png" alt="">
+                    <div class="description">
+                        <p><i class="fas fa-headphones"></i></p>
+                        <h3>test</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, vel.</p>
+                        <a href=""> > Ecouter en ligne</a>
+                    </div>
+                </div>
+                <div class="overlay">
+                    <img src="img/Calque 106.png" alt="">
+                    <div class="description">
+                        <p><i class="fas fa-headphones"></i></p>
+                        <h3>test</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, vel.</p>
+                        <a href=""> > Ecouter en ligne</a>
+                    </div>
+                </div>
             </div>
             <div>
-                <img src="img/Calque 72.png" alt="">
-                <img src="img/Calque 51 copie 3.png" alt="">
-                <img src="img/Calque 21.png" alt="">
-                <img src="img/Calque 51 copie 3.png" alt="">
-                <img src="img/Calque 76.png" alt="">
+                <div class="overlay">
+                    <img src="img/Calque 72.png" alt="">
+                    <div class="description">
+                        <p><i class="fas fa-headphones"></i></p>
+                        <h3>test</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, vel.</p>
+                        <a href=""> > Ecouter en ligne</a>
+                    </div>
+                </div>
+                <div class="overlay">
+                    <img src="img/Calque 51 copie 3.png" alt="">
+                    <div class="description">
+                        <p><i class="fas fa-headphones"></i></p>
+                        <h3>test</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, vel.</p>
+                        <a href=""> > Ecouter en ligne</a>
+                    </div>
+                </div>
+                <div class="overlay">
+                    <img src="img/Calque 21.png" alt="">
+                    <div class="description">
+                        <p><i class="fas fa-headphones"></i></p>
+                        <h3>test</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, vel.</p>
+                        <a href=""> > Ecouter en ligne</a>
+                    </div>
+                </div>
+                <div class="overlay">
+                    <img src="img/Calque 51 copie 3.png" alt="">
+                    <div class="description">
+                        <p><i class="fas fa-headphones"></i></p>
+                        <h3>test</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, vel.</p>
+                        <a href=""> > Ecouter en ligne</a>
+                    </div>
+                </div>
+                <div class="overlay">
+                    <img src="img/Calque 76.png" alt="">
+                    <div class="crop">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo fugiat minus repudiandae? Delectus, quod, unde!</p>
+                    </div>
+                    <div class="description">
+                        <p><i class="fas fa-headphones"></i></p>
+                        <h3>test</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, vel.</p>
+                        <a href=""> > Ecouter en ligne</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

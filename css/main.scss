@@ -17,8 +17,15 @@
 body {
   background-color: $colorBody;
   font-family: $bodyFont;
+  margin-top: 0;
 }
 
+.main {
+  nav {
+    padding-top: 11em;
+  }
+
+}
 
 .photos {
   display: flex;
@@ -44,6 +51,32 @@ body {
     position: relative;
     overflow: hidden;
 
+    .crop {
+      position:absolute;
+      width:100%;
+      bottom:0;
+      margin-bottom: 3em;
+      background-color: $bgWhite;
+
+      p {
+        margin:0;
+        padding: 1em 1em;
+      }
+    }
+
+    .textUnderPhoto {
+      background-color: $bgWhite;
+      margin-top: -0.5em;
+      width:100%;
+
+      p {
+        margin:0;
+        padding: 1em 1em;
+      }
+
+    }
+
+
     .description {
       position: absolute;
       background:linear-gradient(175deg,transparent 15%, #4dcaf3 16%);;
@@ -64,7 +97,7 @@ body {
     }
   }
   .overlay:hover .description {
-    height: 40%;
+    height: 17em;
     transition: height 0.7s;
 
     /*h1 {

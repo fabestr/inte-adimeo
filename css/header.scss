@@ -5,12 +5,23 @@
 
 
 .header {
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
+  position: fixed;
+  background-color: $colorBody;
+  z-index: 100;
+  left:0;
+  right: 0;
+  top:0;
+
   /*&>:nth-child(n){
     flex: 1 1 0;
   }*/
+
+  .flex-header {
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   .navigation {
     width:25%;
@@ -77,9 +88,10 @@
 
 @media screen and (max-width: 700px){
 
-  .header {
+  .flex-header {
     flex-wrap: wrap;
     .userAccountMobile {
+      width:25%;
       font-size: 2em;
       margin-top: 0;
     }
@@ -101,6 +113,7 @@
 
           input {
             width: 100%;
+            margin-bottom: 2em;
           }
         }
 
