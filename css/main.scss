@@ -55,6 +55,7 @@ body {
       position:absolute;
       width:100%;
       bottom:0;
+      height: 8em;
       margin-bottom: 3em;
       background-color: $bgWhite;
 
@@ -125,6 +126,16 @@ body {
       &>:nth-child(n) {
         width:100%;
       }
+
+      .overlay {
+        .crop {
+          height:15em;
+          p {
+            padding-top: 4em;
+          }
+        }
+      }
+
 
     }
   }
